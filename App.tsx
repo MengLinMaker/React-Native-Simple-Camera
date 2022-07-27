@@ -1,9 +1,9 @@
 // @ts-nocheck
 
-import { Image, StyleSheet, Text, View } from 'react-native'
+import React, {useState, useRef, useEffect} from "react";
+import { Image, StyleSheet, View } from 'react-native'
 import { Camera, CameraType } from 'expo-camera'
 import * as MediaLibrary from 'expo-media-library'
-import { useEffect, useRef, useState } from 'react';
 import Button from './components/Button';
 import { StatusBar } from 'expo-status-bar';
 
@@ -95,4 +95,4 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     backgroundColor: 'none,'
   }
-});
+})
